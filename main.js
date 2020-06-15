@@ -2,7 +2,7 @@
  * Your code here!
  ******************************************************************************/
 
-
+getInput(0)
 
 
 
@@ -40,5 +40,17 @@
  ******************************************************************************************/
 
 function getInput(i) {
-  return process.argv[i + 2];
+  if (process.argv[i + 2] % 3 === 0 &&process.argv[i + 2] % 5 !== 0)
+
+return console.log("Fizz")
+
+else if (process.argv[i + 2] % 5 === 0 && process.argv[i + 2] % 3 !== 0)
+
+return console.log("Buzz")
+
+else if (process.argv[i + 2] % 3 ===0 && (process.argv[i + 2] % 5 === 0))
+
+return console.log("FizzBuzz")
+
+else return console.log( process.argv[i + 2])
 }
